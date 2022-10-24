@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/teams.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="calender.html" class="active">Calender</a>
+        <a href="meeting.html">Meetings</a>
+        <a href="teams.html">Teams</a>
+        <a href="#logout">Logout</a>
+        <a href="#profile">Hello <span class="mailid">jane</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <h2 class="h-2">Teams</h2>
+      <hr class="rule">
+      <div class="flex-container">
+        <div class="flex-item-left">
+          <p class="project-date">12 September 2020 <span class="span-time">6.00 - 7.00</span></p>
+          <p class="project-kick">Project kickoff</p>
+          <button class="project-details" type="submit" onclick="">Execute yourself</button>
+          <hr class="add-rule">
+          <p class="project-attendance">Members: <span class="span-mail">mark@exmaple.com, jane@example.com</span></p>
+          <select name="select-mem" id="cars">
+            <option value="volvo">Select member</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <input type="submit" class="project-add" value="Add">
+        </div>
+        <div class="flex-item-middle">
+          <p class="project-date">12 September 2020 <span class="span-time">6.00 - 7.00</span></p>
+          <p class="project-kick">Project kickoff</p>
+          <button class="project-details" type="submit" onclick="">Execute yourself</button>
+          <hr class="add-rule">
+          <p class="project-attendance">Members: <span class="span-mail">mark@exmaple.com, jane@example.com</span></p>
+          <select name="select-mem" id="cars">
+            <option value="volvo">Select member</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <input type="submit" class="project-add" value="Add">
+        </div>
+        <div class="flex-item-right">
+          <p class="project-date">12 September 2020 <span class="span-time">6.00 - 7.00</span></p>
+          <p class="project-kick">Project kickoff</p>
+          <button class="project-details" type="submit" onclick="">Execute yourself</button>
+          <hr class="add-rule">
+          <p class="project-attendance">Members: <span class="span-mail">mark@exmaple.com, jane@example.com</span></p>
+          <select name="select-mem" id="cars">
+            <option value="volvo">Select member</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <input type="submit" class="project-add" value="Add">
+        </div>
+      </div>
+      
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        
+        </script>
+</body>
+</html>

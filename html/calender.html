@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/calender.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#calender" class="active">Calender</a>
+  <a href="meeting.html">Meetings</a>
+  <a href="teams.html">Teams</a>
+  <a href="#logout">Logout</a>
+  <a href="#profile">Hello <span class="mailid">jane</span></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<h2 class="h-2"> Calender</h2>
+<hr class="rule">
+<div class="calender">
+  <input type="date" id="dob">
+  <p>22 OCtober 2022</p>
+  
+</div>
+<div class="day">
+  <span>Sat</span>
+</div>
+<div class="flex-container">
+  <div class="flex-left">
+    <p class="no"></p>
+  </div>
+  <div class="flex-right">
+    
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function multiplyNode(node, count, deep) {
+    for (var i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+    }
+}
+
+multiplyNode(document.querySelector('.flex-container'), 31, true);
+
+</script>
+
+</body>
+</html>
