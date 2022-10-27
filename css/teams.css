@@ -208,3 +208,11 @@ body {
     margin:2% 2% 2% 2%;
     font-weight:600;
   }
+  textarea#text-area{
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 8px;
+    width: 90%;
+    height: 10%;
+}
