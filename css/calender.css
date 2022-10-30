@@ -7,11 +7,11 @@ body {
   .topnav {
     overflow: hidden;
     background-color: #f0ecec;
-    margin-left: 3%;
+    /* margin-left: 3%; */
     /* margin-right: 10px; */
   }
   .h-2 {
-        margin-left: 4%;
+        margin-left: 4.8%;
   }
   .no::before {
     /* Increment "my-sec-counter" by 1 */
@@ -24,9 +24,15 @@ body {
     display: block;
     color: #545252;
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 1%;
+    padding-right:1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
     text-decoration: none;
     font-size: 17px;
+  }
+  .topnav a:first-child{
+    margin-left: 4%;
   }
   
   .topnav a:hover {
@@ -34,6 +40,7 @@ body {
     color: black;
     font-weight: 500;
   }
+
   /* 
   .topnav a.active {
     background-color: #c9cccb;
@@ -78,10 +85,11 @@ body {
     margin-right: 1%;
   }
   .day span{
-    margin-left: 4%;
+    margin-left: 4.8%;
   }
   .calender p{
-    margin-left: 4%;
+    font-weight: 600;
+    margin-left: 4.8%;
   }
   .flex-container {
     display: flex;
@@ -89,7 +97,7 @@ body {
     padding-top: 4px;
   }
   .flex-left {
-    width: 3%;
+    width: 4%;
     height: 30px;
     display: flex;
     align-items: center;
