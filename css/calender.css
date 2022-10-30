@@ -24,16 +24,17 @@ body {
     display: block;
     color: #545252;
     text-align: center;
-    padding-top: 1%;
-    padding-right:1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
+    padding-top: 14px;
+    padding-right: 10px;
+    padding-bottom: 14px;
+    padding-left: 10px;
     text-decoration: none;
     font-size: 17px;
   }
   .topnav a:first-child{
     margin-left: 4%;
   }
+  
   
   .topnav a:hover {
     background-color: #b0afaf;
@@ -75,6 +76,7 @@ body {
       float: none;
       display: block;
       text-align: left;
+      margin-left:12px;
     }
   }
   
