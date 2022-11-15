@@ -146,7 +146,20 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+form.formaddmeet p{
+    display:inline;
+}
+input#starth{
+    width: 10%;
+    margin-left:2%;
+}
+input#startm,input#endm{
+    width: 10%;
+}
+input#endh{
+    width: 10%;
+    margin-left:2%;
+}
 .container * {
   box-sizing: border-box;
 }
@@ -212,13 +225,13 @@ body {
   padding: 15px;
   border: none;
 }
-.form-filter{
+.formaddmeet{
   margin-left:4%;
   margin-right:4%;
   background-color: #87dfeb;
   border-radius: 5px;
 }
-.form-filter label:first-child{
+.formaddmeet label:first-child{
   color: #fff;
 }
 .flex-outer li button {
@@ -282,6 +295,15 @@ input#lname{
   height:10%; */
   margin-bottom: 1%;
 }
+input#meet-date{
+    margin-left: 2%;
+    margin-top: 1%;
+    width:90%;
+    height:10%;
+    margin-bottom: 1%;
+    padding:2px;
+    border-radius: 4px;
+}
 label.form-Date{
   margin-left: 2%;
 }
@@ -295,13 +317,30 @@ p.form-Searchfor{
 label.form-lname{
   margin-left: 2%;
 }
-textarea#lname{
+textarea#form-desc{
   margin-left: 2%;
   margin-top: 1%;
   margin-bottom: 1%;
+  padding:2px;
   border-radius: 8px;
   width:90%;
   height:10%;
+}
+input#emailattendee{
+  margin-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding:2px;
+  border-radius: 4px;
+  width:90%;
+  height:10%;
+}
+input#start{
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding:2px;
+    width:5%;
 }
 .form-search{
   margin-left: 2%;

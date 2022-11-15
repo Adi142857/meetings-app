@@ -2,7 +2,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/meeting.css">
+    <link rel="stylesheet" href="/css/addmeet.css">
 </head>
 <body>
     <div class="topnav" id="myTopnav">
@@ -17,23 +17,26 @@
     </div>
     <h2 class="h-2">Meetings</h2>
     <div class="midnav" id="myMidnav">
-      <a href="" class="active">Filter/Search</a>
-      <a href="addmeet.html" class="mid-meet">Add a meeting</a>
+      <a href="meeting.html" class="active">Filter/Search</a>
+      <a href="" class="mid-meet">Add a meeting</a>
     </div>
-    <form class="form-filter">
-      <p class="form-Searchfor">Search for meetings</p>
+    <form class="formaddmeet" id="form-addm" action="">
+      <p class="form-Searchfor">Add a meeting</p>
       <hr class="rule">
       <label for="date" class="form-Date">Date</label><br>
-      <select class="fname" id="fname">
-        <option value="add">Add</option>
-        <option value="past">Past</option>
-        <option value="today">Today</option>
-        <option value="audi">Audi</option>
-      </select><br>
-      <label for="lname" class="form-lname">Last name:</label><br>
-    
-      <textarea rows="4" cols="50"id="lname" name="lname">Search using words that descibr the me...</textarea><br>
-      <input type="submit" class="form-search" value="Search">
+      <input type="date" id="meet-date" name="date"><br>
+      <label for="starttime" class="form-Date">Start Time</label><br>
+      <input type="number" max="24" min="0" id="starth"><p> -</p>
+      <input type="number" id="startm"><br>
+      <label for="starttime" class="form-Date">End Time</label><br>
+      <input type="number" id="endh" ><p> -</p>
+      <input type="number" id="endm"><br>
+      <label for="lname" class="form-lname">Description:</label><br>
+      <textarea rows="4" cols="50" id="form-desc" name="lname">Agent about today's meeting</textarea><br>
+      <label for="lname" class="form-lname">Email of todays attendenes,or team shorts</label><br>
+      <input type="text" id="emailattendee" name="lname" placeholder="mark@exmaple.com, jane@example.com"></textarea><br>
+      <input type="submit" class="form-search" value="Submit">
+      
     </form>
     <p class="p-matching">
       Meetings matching your search criteria
@@ -54,7 +57,7 @@
       <input type="submit" class="project-add" value="Add">
     </div>
     
-    <script>
+    <!-- <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
           if (x.className === "topnav") {
@@ -72,6 +75,7 @@
 
       multiplyNode(document.querySelector('.post'), 10, true);
       
-    </script>
+    </script> -->
+    <script src="./js/addmeet.js"></script>
 </body>
 </html>
